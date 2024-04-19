@@ -1,0 +1,29 @@
+/*.photo > img {*/
+/*    position: relative;*/
+/*    top: -112px;*/
+/*}*/
+
+.wrapper {
+    /*transform: translateY(-50%);*/
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 20% auto;
+    justify-items: center;
+    justify-content: start;
+
+}
+
+.contact-name {
+    font-size: 10px;
+    padding-left: 16px;
+    white-space: nowrap;
+}
+
+.contact-info {
+    font-size: 12px;
+    padding-left: 16px;
+    white-space: nowrap;
+    text-decoration: underline;
+}

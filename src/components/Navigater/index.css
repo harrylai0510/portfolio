@@ -1,0 +1,8 @@
+.Link {
+    color: black;
+    text-decoration: none;
+}
+
+.Link.active {
+    background: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity));
+}
