@@ -7,7 +7,7 @@ import * as icons from "react-bootstrap-icons";
 
 export default function Intro() {
     return (
-        <Col xs={12} lg={3} className="border rounded bg-white m-1 d-flex flex-column justify-content-center align-items-center">
+        <Col xs={12} lg={3} className="border rounded bg-white m-1 d-flex flex-column align-items-center">
             <div className="wrapper w-100">
 
                 <div className="photo d-flex justify-content-center">

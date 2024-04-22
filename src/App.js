@@ -12,7 +12,9 @@ import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
-
+import Experience from "./pages/Experience";
+import Education from "./pages/Education";
+import Project from "./pages/Project";
 
 function App() {
 
@@ -25,20 +27,22 @@ function App() {
                         <Intro/>
 
                         <Col xs={12} lg className="border rounded bg-white m-1 p-4">
-                            {/*<About />*/}
-                            {/*<Resume />*/}
-                            {/*<Skills />*/}
-                            {/*<Contact />*/}
+                            <About />
+                            <Project />
+                            <Education />
+                            <Experience />
+                            <Skills />
+                            <Contact />
 
-                            <Routes>
-                                <Route path='/' Component={About}/>
-                                <Route path='/resume' Component={Resume}/>
-                                <Route path='/skills' Component={Skills}/>
-                                <Route path='/contact' Component={Contact}/>
-                            </Routes>
+                            {/*<Routes>*/}
+                            {/*    <Route path='/' Component={About}/>*/}
+                            {/*    <Route path='/resume' Component={Resume}/>*/}
+                            {/*    <Route path='/skills' Component={Skills}/>*/}
+                            {/*    <Route path='/contact' Component={Contact}/>*/}
+                            {/*</Routes>*/}
                         </Col>
 
-                        <Navigater />
+                        {/*<Navigater />*/}
                     </Row>
                 </Container>
 

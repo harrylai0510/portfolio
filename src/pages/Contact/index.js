@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <>
-                <span className="h1 m-3">Contact</span>
+                <span className="h1">Contact</span>
             </>
 
             <>
