@@ -6,7 +6,7 @@ import './index.css';
 
 export default function Navigater() {
     return (
-        <Col xs={12} lg={1} className="border rounded bg-white m-1 p-3">
+        <Col xs={12} lg={1} className="border rounded bg-white m-1 p-3 order-sm-2 order-lg-3">
 
             <Stack gap={3}>
                 <NavLink to="/" className="Link rounded">
@@ -15,16 +15,16 @@ export default function Navigater() {
                         <text>About</text>
                     </div>
                 </NavLink>
-                <NavLink to="/resume" className="Link rounded">
+                <NavLink to="/edu_exp" className="Link rounded">
                     <div className="p-2 d-flex flex-column align-items-center justify-content-center">
                         <icons.FileEarmarkSpreadsheet size={36}></icons.FileEarmarkSpreadsheet>
-                        <text>Resume</text>
+                        <text>Edu & Exp</text>
                     </div>
                 </NavLink>
-                <NavLink to="/skills" className="Link rounded">
+                <NavLink to="/project" className="Link rounded">
                     <div className="p-2 d-flex flex-column align-items-center justify-content-center">
                         <icons.Tools size={36}></icons.Tools>
-                        <text>Skills</text>
+                        <text>Project</text>
                     </div>
                 </NavLink>
                 <NavLink to="/contact" className="Link rounded">

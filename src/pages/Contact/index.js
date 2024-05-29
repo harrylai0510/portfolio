@@ -1,12 +1,11 @@
 import {Button, FloatingLabel, Form} from "react-bootstrap";
-import './index.css';
 
 export default function Contact() {
     return (
         <>
-            <>
-                <span className="h1">Contact</span>
-            </>
+            <div className="title">
+                <h1>Contact</h1>
+            </div>
 
             <>
                 <Form className="bg-light p-3 rounded">

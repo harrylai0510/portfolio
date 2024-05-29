@@ -1,5 +1,5 @@
 import {data} from "../../store/data";
-import {Card, CardGroup} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -8,7 +8,9 @@ export default function Project() {
 
     return (
         <>
-            <h1>Project</h1>
+            <div className={"title"}>
+                <h1>Project</h1>
+            </div>
 
             <Row xs={1} sm={2} lg={1} className="g-4">
                 {
@@ -16,9 +18,12 @@ export default function Project() {
                         return (
                             <Col>
                                 <Card>
-                                    <Card.Body>
-                                        <Card.Title>{project.name}</Card.Title>
-                                        <Card.Subtitle>{project.company}</Card.Subtitle>
+                                    <Card.Body className="d-flex flex-column justify-content-between">
+                                        <div className="d-flex justify-content-between">
+                                            <Card.Title>{project.name}</Card.Title>
+                                            <Card.Subtitle>{project.company}</Card.Subtitle>
+                                        </div>
+                                        <hr className="m-0 p-0"/>
                                         <Card.Text>
                                             {
                                                 project.description.map((desc) => {
