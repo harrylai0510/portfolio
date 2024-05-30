@@ -17,8 +17,8 @@ export default function Navigater() {
                 </NavLink>
                 <NavLink to="/edu_exp" className="Link rounded">
                     <div className="p-2 d-flex flex-column align-items-center justify-content-center">
-                        <icons.FileEarmarkSpreadsheet size={36}></icons.FileEarmarkSpreadsheet>
-                        <text>Edu & Exp</text>
+                        <icons.Briefcase size={36}></icons.Briefcase>
+                        <text>Edu&Exp</text>
                     </div>
                 </NavLink>
                 <NavLink to="/project" className="Link rounded">

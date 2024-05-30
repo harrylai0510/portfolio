@@ -48,7 +48,7 @@ export default function Intro() {
                         <ListGroup.Item variant="secondary">
                             <div className="contact-box">
                                 <div className="bg-light p-1 rounded">
-                                    <icons.Envelope size={16}></icons.Envelope>
+                                    <icons.Github size={16}></icons.Github>
                                 </div>
 
                                 <div className="d-flex flex-column">
