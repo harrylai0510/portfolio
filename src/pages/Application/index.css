@@ -1,0 +1,8 @@
+.apps .card {
+    transition:.3s;
+}
+
+.apps .card:hover{
+    transform:scale(1.05);
+}
+

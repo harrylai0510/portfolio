@@ -27,6 +27,12 @@ export default function Navigater() {
                         <text>Project</text>
                     </div>
                 </NavLink>
+                <NavLink to="/application" className="Link rounded">
+                    <div className="p-2 d-flex flex-column align-items-center justify-content-center">
+                        <icons.Window size={36}></icons.Window>
+                        <text>Application</text>
+                    </div>
+                </NavLink>
                 <NavLink to="/contact" className="Link rounded">
                     <div className="p-2 d-flex flex-column align-items-center justify-content-center">
                         <icons.PersonLinesFill size={36}></icons.PersonLinesFill>

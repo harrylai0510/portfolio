@@ -12,6 +12,7 @@ import Navigater from "./components/Navigater";
 import About from "./pages/About";
 import EduExp from "./pages/Edu_Exp";
 import Project from "./pages/Project";
+import Application from "./pages/Application";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                                 <Route path='/' Component={About}/>
                                 <Route path='/edu_exp' Component={EduExp}/>
                                 <Route path='/project' Component={Project}/>
+                                <Route path='/application' Component={Application}/>
                                 <Route path='/contact' Component={Contact}/>
                             </Routes>
                         </Col>
