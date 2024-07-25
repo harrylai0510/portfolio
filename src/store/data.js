@@ -166,5 +166,52 @@ export const data = {
                 "Generation of annual or quarterly reports.",
             ]
         },
+        {
+            name: "Review applicant’s qualifications workflow system",
+            company: " WFSFAA",
+            description: [
+                "Responsible for establishing the infrastructure related to the system.",
+                "Management of system infrastructure, such as SSL updates and addressing security vulnerabilities.",
+                "Seamlessly integrate the system with the SFO's internal (ISFAST) system."
+            ]
+        },
+        {
+            name: "eForm Platform",
+            company: " Hospital Authority (HA)",
+            description: [
+                "Design and implement the infrastructure related to the system for both UAT and Production environments.",
+                "Management of system infrastructure, such as SSL updates and addressing security vulnerabilities.",
+                "Regularly update the software version to substant internal IT requirements.",
+                "Integration of staff information from HA’s system into our system."
+            ]
+        },
+        {
+            name: "Digital application form system",
+            company: " Registration and Electoral Office (REO)",
+            description: [
+                "Responsible for establishing the infrastructure related to the system.",
+                "Management of system infrastructure, such as SSL updates and addressing security vulnerabilities.",
+                "Conduct a stress test to validate that the system meets all the specified requirements."
+            ]
+        },
+        {
+            name: "eForm Platform",
+            company: "HK Electric (HKE)",
+            description: [
+                "Responsible for establishing the infrastructure related to the system.",
+                "Management of system infrastructure, such as SSL updates and addressing security vulnerabilities.",
+                "Import and export the data between HKE’s O365 and our system.",
+                "Update the system and OS version to keep the version most up-to-date and fulfil HKE IT policy.",
+            ]
+        },
+        {
+            name: "eForm Platform",
+            company: "City University of Hong Kong (CityU)",
+            description: [
+                "Responsible for establishing the infrastructure related to the system.",
+                "Management of system infrastructure, such as SSL updates and addressing security vulnerabilities.",
+                "Intergrade the login flow between the system and City U's system (Okta).",
+            ]
+        },
     ]
 };
