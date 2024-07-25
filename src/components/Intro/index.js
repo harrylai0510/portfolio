@@ -2,7 +2,7 @@ import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
 
 import './index.css';
-import {ListGroup} from "react-bootstrap";
+import {Button, ListGroup} from "react-bootstrap";
 import * as icons from "react-bootstrap-icons";
 
 export default function Intro() {
@@ -53,12 +53,18 @@ export default function Intro() {
 
                                 <div className="d-flex flex-column">
                                     <small className="contact-name">Github</small>
-                                    <span className="contact-info"><a href={"https://github.com/harrylai0510"} target={"_blank"}>harrylai0510</a></span>
+                                    <span className="contact-info"><a href={"https://github.com/harrylai0510"} target={"_blank"} rel="noreferrer">harrylai0510</a></span>
                                 </div>
                             </div>
                         </ListGroup.Item>
                     </ListGroup>
+
+                    <a href="resume.pdf" download="Lai_Hon_Chung_Resume.pdf" target="_blank" rel="noreferrer" >
+                        <Button className="mt-3 w-100" variant="outline-primary">Download Resume</Button>
+                    </a>
+
                 </div>
+
             </div>
         </Col>
     );
