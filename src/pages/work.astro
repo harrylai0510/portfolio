@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import JobCard from '../components/JobCard.astro';
+import { jobs } from '../data/work';
+---
+<Layout title="work_experience — ~/portfolio" description="Work experience">
+  <div class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
+      <p class="mb-4 text-xs text-[#777] sm:mb-6">// work_experience</p>
+
+      <p class="mb-4 text-xs text-[#777] sm:mb-6">// timeline</p>
+      <div class="flex flex-col gap-6">
+        {jobs.map((job, i) => (
+          <div class="flex gap-4">
+            <div class="flex flex-shrink-0 flex-col items-center pt-0.5">
+              <div class="h-2.5 w-2.5 rounded-full bg-accent" />
+              {i < jobs.length - 1 && (
+                <div class="mt-1.5 h-6 w-0.5 shrink-0 bg-elevated" />
+              )}
+            </div>
+            <div class="min-w-0 flex-1 rounded-2xl border border-elevated bg-surface px-5 py-4 shadow-card">
+              <p class="mb-1.5 text-xs text-[#777]">{job.dates}</p>
+              <p class="font-mono text-sm text-white">
+                {job.role} · {job.company}
+              </p>
+              <p class="mt-1.5 font-mono text-[13px] leading-snug text-[#777]">
+                {job.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="mb-4 mt-12 text-xs text-[#777] sm:mb-6">// details</p>
+      <div class="flex flex-col gap-4 sm:gap-6">
+        {jobs.map((job) => (
+          <JobCard job={job} />
+        ))}
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>

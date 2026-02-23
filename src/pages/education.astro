@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import EducationCard from '../components/EducationCard.astro';
+import { education } from '../data/education';
+---
+<Layout title="education — ~/portfolio" description="Education">
+  <div class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
+      <p class="mb-4 text-xs text-[#777] sm:mb-6">// education</p>
+      <div class="flex flex-col gap-4 sm:gap-6">
+        {education.map((entry) => (
+          <EducationCard entry={entry} />
+        ))}
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>

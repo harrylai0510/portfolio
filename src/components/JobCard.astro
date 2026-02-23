@@ -1,0 +1,17 @@
+---
+import type { Job } from '../data/work';
+interface Props {
+  job: Job;
+}
+const { job } = Astro.props;
+---
+<div
+  class="min-w-0 rounded-2xl border border-elevated bg-surface p-4 shadow-card transition-shadow duration-300 hover:shadow-xl sm:p-5"
+>
+  <div class="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-x-2 gap-y-1">
+    <span class="text-xs font-medium text-white sm:text-sm">{job.role}</span>
+    <span class="text-[11px] text-[#777] sm:text-xs">{job.dates}</span>
+  </div>
+  <p class="mb-2 text-xs text-accent sm:text-[13px]">{job.company}</p>
+  <p class="text-xs leading-relaxed text-[#777] sm:text-[13px]">{job.description}</p>
+</div>

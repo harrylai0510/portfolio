@@ -1,0 +1,2329 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Page: Home",
+      "clip": true,
+      "width": 800,
+      "fill": "#1A1A1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "5e7Mq",
+          "name": "header",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000025",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 12
+          },
+          "padding": [
+            0,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TfsIb",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "WlYrA",
+              "name": "nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uCYdX",
+                  "name": "linkWork",
+                  "fill": "#FFFFFF",
+                  "content": "work",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dcAW4",
+                  "name": "linkAbout",
+                  "fill": "#777777",
+                  "content": "about",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gT5AT",
+                  "name": "linkContact",
+                  "fill": "#777777",
+                  "content": "contact",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wPP57",
+              "name": "cta",
+              "height": 40,
+              "fill": "#FF6B35",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FF6B3550",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 20
+              },
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8lxsr",
+                  "name": "ctaLabel",
+                  "fill": "#0D0D0D",
+                  "content": "resume.pdf",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZsFer",
+          "name": "hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1A1A1A",
+                "position": 0
+              },
+              {
+                "color": "#251A14",
+                "position": 0.4
+              },
+              {
+                "color": "#1A1A1A",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "0hKpX",
+              "name": "heroName",
+              "fill": "#FFFFFF",
+              "content": "your_name",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 32,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "hanLR",
+              "name": "heroTagline",
+              "fill": "#777777",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "> software_engineer · building systems that scale",
+              "lineHeight": 1.4,
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "wmIC6",
+              "name": "heroImage",
+              "width": "fill_container",
+              "height": 220,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771856382212.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 16,
+              "layout": "vertical"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T0nCB",
+          "name": "pagesSection",
+          "width": "fill_container",
+          "fill": "#212121",
+          "cornerRadius": 12,
+          "stroke": {
+            "thickness": {
+              "left": 3
+            },
+            "fill": "#FF6B35"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            48,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ZMibF",
+              "name": "pagesTitle",
+              "fill": "#777777",
+              "content": "// pages",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "G5BY7",
+              "name": "linkWork",
+              "fill": "#FF6B35",
+              "content": "> work_experience",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "nK8Ib",
+              "name": "linkEdu",
+              "fill": "#FF6B35",
+              "content": "> education",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "eoTh0",
+              "name": "linkProj",
+              "fill": "#FF6B35",
+              "content": "> projects",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NHHnJ",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "#212121",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000020",
+            "offset": {
+              "x": 0,
+              "y": -1
+            },
+            "blur": 8
+          },
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BxWk8",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "2qZhY",
+              "name": "footerLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MVYEV",
+                  "name": "footerTwitter",
+                  "fill": "#777777",
+                  "content": "twitter",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "zrX51",
+                  "name": "footerLinkedIn",
+                  "fill": "#777777",
+                  "content": "linkedin",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "G2dp1",
+                  "name": "footerGitHub",
+                  "fill": "#777777",
+                  "content": "github",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "4DEGO",
+              "name": "footerCopy",
+              "fill": "#777777",
+              "content": "© 2025",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zasKK",
+      "x": 850,
+      "y": 0,
+      "name": "Page: Work",
+      "width": 800,
+      "fill": "#1A1A1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Aeed2",
+          "name": "workHeader",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000025",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 12
+          },
+          "padding": [
+            0,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nTLTh",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "5sAZi",
+              "name": "nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nLUF5",
+                  "name": "linkWork",
+                  "fill": "#FFFFFF",
+                  "content": "work",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "6aaX3",
+                  "name": "linkAbout",
+                  "fill": "#777777",
+                  "content": "about",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "r6Cfu",
+                  "name": "linkContact",
+                  "fill": "#777777",
+                  "content": "contact",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wJaK9",
+              "name": "cta",
+              "height": 40,
+              "fill": "#FF6B35",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FF6B3550",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 20
+              },
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Rfcmt",
+                  "name": "ctaLabel",
+                  "fill": "#0D0D0D",
+                  "content": "resume.pdf",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R378X",
+          "name": "workContent",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "vMhcZ",
+              "name": "workTitle",
+              "fill": "#777777",
+              "content": "// work_experience",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "GDYvy",
+              "name": "workJob1",
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0ycY8",
+                  "name": "job1Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VPY4f",
+                      "name": "job1Role",
+                      "fill": "#FFFFFF",
+                      "content": "Senior Software Engineer",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iEG5W",
+                      "name": "job1Dates",
+                      "fill": "#777777",
+                      "content": "2021 — present",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jAWC3",
+                  "name": "job1Company",
+                  "fill": "#FF6B35",
+                  "content": "company_name",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "VmICN",
+                  "name": "job1Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Led backend services and APIs. Shipped features that improved throughput by 40% and reduced latency.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VB5VF",
+              "name": "workJob2",
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tYei8",
+                  "name": "job2Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ltr8p",
+                      "name": "job2Role",
+                      "fill": "#FFFFFF",
+                      "content": "Software Engineer",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "R2AKs",
+                      "name": "job2Dates",
+                      "fill": "#777777",
+                      "content": "2019 — 2021",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "g7jiO",
+                  "name": "job2Company",
+                  "fill": "#FF6B35",
+                  "content": "previous_company",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rEa16",
+                  "name": "job2Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Owned services in Go and Python. Collaborated with eng and product on roadmap and on-call.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UX6Ot",
+              "name": "workJob3",
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MDu0l",
+                  "name": "job3Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uCbrb",
+                      "name": "job3Role",
+                      "fill": "#FFFFFF",
+                      "content": "Junior Developer",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WaImG",
+                      "name": "job3Dates",
+                      "fill": "#777777",
+                      "content": "2017 — 2019",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ZLWm3",
+                  "name": "job3Company",
+                  "fill": "#FF6B35",
+                  "content": "agency_inc",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "QbdLH",
+                  "name": "job3Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Built web apps and internal tools. Wrote tests, fixed bugs, and shipped to production.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Ia1ZZ",
+              "name": "timelineTitle",
+              "fill": "#777777",
+              "content": "// timeline",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "fyop0",
+              "name": "timelineSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kPteE",
+                  "name": "timelineItem1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YOhDP",
+                      "name": "tDotCol1",
+                      "width": 32,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "JWSfP",
+                          "name": "tDot1",
+                          "fill": "#FF6B35",
+                          "width": 10,
+                          "height": 10
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "MWZEO",
+                          "name": "lineSeg1",
+                          "fill": "#2D2D2D",
+                          "width": 2,
+                          "height": 24
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SboI5",
+                      "name": "tContent1",
+                      "width": "fill_container",
+                      "fill": "#212121",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#2D2D2D"
+                      },
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AUyYG",
+                          "name": "tDate1",
+                          "fill": "#777777",
+                          "content": "2021 — present",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qQ9yi",
+                          "name": "tRole1",
+                          "fill": "#FFFFFF",
+                          "content": "Senior Software Engineer · company_name",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ry91c",
+                          "name": "tDesc1",
+                          "fill": "#777777",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Led backend services and APIs. Shipped features that improved throughput by 40%.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G72Pb",
+                  "name": "timelineItem2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bJtwQ",
+                      "name": "tDotCol2",
+                      "width": 32,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "5RtoA",
+                          "name": "tDot2",
+                          "fill": "#FF6B35",
+                          "width": 10,
+                          "height": 10
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "rE4RR",
+                          "name": "lineSeg2",
+                          "fill": "#2D2D2D",
+                          "width": 2,
+                          "height": 24
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eK1o0",
+                      "name": "tContent2",
+                      "width": "fill_container",
+                      "fill": "#212121",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#2D2D2D"
+                      },
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NuK4G",
+                          "name": "tDate2",
+                          "fill": "#777777",
+                          "content": "2019 — 2021",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gP2TY",
+                          "name": "tRole2",
+                          "fill": "#FFFFFF",
+                          "content": "Software Engineer · previous_company",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g2R0p",
+                          "name": "tDesc2",
+                          "fill": "#777777",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Owned services in Go and Python. Collaborated with eng and product on roadmap.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fK8nN",
+                  "name": "timelineItem3",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rAyeJ",
+                      "name": "tDotCol3",
+                      "width": 32,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "qKTm8",
+                          "name": "tDot3",
+                          "fill": "#FF6B35",
+                          "width": 10,
+                          "height": 10
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Akm4e",
+                      "name": "tContent3",
+                      "width": "fill_container",
+                      "fill": "#212121",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#2D2D2D"
+                      },
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Yzvpd",
+                          "name": "tDate3",
+                          "fill": "#777777",
+                          "content": "2017 — 2019",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PpKA7",
+                          "name": "tRole3",
+                          "fill": "#FFFFFF",
+                          "content": "Junior Developer · agency_inc",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BivRS",
+                          "name": "tDesc3",
+                          "fill": "#777777",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Built web apps and internal tools. Wrote tests, fixed bugs, and shipped to production.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VJRDp",
+          "name": "workFooter",
+          "width": "fill_container",
+          "fill": "#212121",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000020",
+            "offset": {
+              "x": 0,
+              "y": -1
+            },
+            "blur": 8
+          },
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "vJKgb",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "wPsqd",
+              "name": "footerLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cmGhR",
+                  "name": "footerTwitter",
+                  "fill": "#777777",
+                  "content": "twitter",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "OXcSV",
+                  "name": "footerLinkedIn",
+                  "fill": "#777777",
+                  "content": "linkedin",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vqNNc",
+                  "name": "footerGitHub",
+                  "fill": "#777777",
+                  "content": "github",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "UmdxY",
+              "name": "footerCopy",
+              "fill": "#777777",
+              "content": "© 2025",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RNWne",
+      "x": 1700,
+      "y": 0,
+      "name": "Page: Education",
+      "width": 800,
+      "fill": "#1A1A1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Q1I2J",
+          "name": "eduHeader",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000025",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 12
+          },
+          "padding": [
+            0,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "z6Xps",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "H6MtY",
+              "name": "nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zMViS",
+                  "name": "linkWork",
+                  "fill": "#FFFFFF",
+                  "content": "work",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "6DqO7",
+                  "name": "linkAbout",
+                  "fill": "#777777",
+                  "content": "about",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xXGap",
+                  "name": "linkContact",
+                  "fill": "#777777",
+                  "content": "contact",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R3Rp5",
+              "name": "cta",
+              "height": 40,
+              "fill": "#FF6B35",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FF6B3550",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 20
+              },
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4TKxe",
+                  "name": "ctaLabel",
+                  "fill": "#0D0D0D",
+                  "content": "resume.pdf",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Xp0o2",
+          "name": "eduContent",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "uVMNT",
+              "name": "eduTitle",
+              "fill": "#777777",
+              "content": "// education",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "hz42r",
+              "name": "eduCard1",
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gzVJl",
+                  "name": "edu1Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6c0pJ",
+                      "name": "edu1Degree",
+                      "fill": "#FFFFFF",
+                      "content": "B.S. Computer Science",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jwp4R",
+                      "name": "edu1Dates",
+                      "fill": "#777777",
+                      "content": "2013 — 2017",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jQhoG",
+                  "name": "edu1School",
+                  "fill": "#FF6B35",
+                  "content": "university_name",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jg1nP",
+                  "name": "edu1Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Focus on systems and algorithms. Graduated with honors.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fpKA4",
+              "name": "eduCard2",
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l5XhP",
+                  "name": "edu2Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m4x7O",
+                      "name": "edu2Degree",
+                      "fill": "#FFFFFF",
+                      "content": "M.S. Software Engineering",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z3DvC",
+                      "name": "edu2Dates",
+                      "fill": "#777777",
+                      "content": "2017 — 2019",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "kYEeE",
+                  "name": "edu2School",
+                  "fill": "#FF6B35",
+                  "content": "tech_institute",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "0wR7G",
+                  "name": "edu2Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Thesis on distributed systems. Teaching assistant for OS course.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QRNvJ",
+          "name": "eduFooter",
+          "width": "fill_container",
+          "fill": "#212121",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000020",
+            "offset": {
+              "x": 0,
+              "y": -1
+            },
+            "blur": 8
+          },
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DGiVM",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "BtuyN",
+              "name": "footerLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ej0Bu",
+                  "name": "footerTwitter",
+                  "fill": "#777777",
+                  "content": "twitter",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "8nhPY",
+                  "name": "footerLinkedIn",
+                  "fill": "#777777",
+                  "content": "linkedin",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gTxIK",
+                  "name": "footerGitHub",
+                  "fill": "#777777",
+                  "content": "github",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "fUb6V",
+              "name": "footerCopy",
+              "fill": "#777777",
+              "content": "© 2025",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "id": "dizoZ",
+      "x": 40,
+      "y": 883,
+      "name": "responsiveNote",
+      "width": 360,
+      "height": 72,
+      "content": "Responsive: Mobile <640px (sm), Tablet 640–768px (md), Desktop 768px+. Header/footer wrap on small; padding px-4→px-8; hero title 24px→32px; cards p-4→p-5. Implemented in Astro with Tailwind breakpoints."
+    },
+    {
+      "type": "frame",
+      "id": "dBnRB",
+      "x": 2550,
+      "y": 0,
+      "name": "Page: Projects",
+      "width": 800,
+      "fill": "#1A1A1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "T4M5a",
+          "name": "projHeader",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000025",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 12
+          },
+          "padding": [
+            0,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "x9vCV",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "P2RdI",
+              "name": "nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SsiS1",
+                  "name": "linkWork",
+                  "fill": "#FFFFFF",
+                  "content": "work",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "K0p9N",
+                  "name": "linkAbout",
+                  "fill": "#777777",
+                  "content": "about",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Oh7LO",
+                  "name": "linkContact",
+                  "fill": "#777777",
+                  "content": "contact",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "h7njH",
+              "name": "cta",
+              "height": 40,
+              "fill": "#FF6B35",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FF6B3550",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 20
+              },
+              "padding": [
+                0,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1EYHX",
+                  "name": "ctaLabel",
+                  "fill": "#0D0D0D",
+                  "content": "resume.pdf",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QO2eW",
+          "name": "projContent",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "jBUJJ",
+              "name": "projTitle",
+              "fill": "#777777",
+              "content": "// projects",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "XKQRq",
+              "name": "projCard1",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uLfpc",
+                  "name": "projectImage",
+                  "width": "fill_container",
+                  "height": 100,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771856415433.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": [
+                    16,
+                    16,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xl9hP",
+                  "name": "proj1Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wKn6z",
+                      "name": "proj1Name",
+                      "fill": "#FFFFFF",
+                      "content": "distributed_cache",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MlinJ",
+                      "name": "proj1Dates",
+                      "fill": "#777777",
+                      "content": "2022 — present",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "cl3yU",
+                  "name": "proj1Tech",
+                  "fill": "#FF6B35",
+                  "content": "Go · Redis · gRPC",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "BVUXd",
+                  "name": "proj1Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Side project: high-throughput cache layer with cluster support. Open-sourced.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O4nQY",
+              "name": "projCard2",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#212121",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#2D2D2D"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000035",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1Yiq5",
+                  "name": "projectImage",
+                  "width": "fill_container",
+                  "height": 100,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771856422680.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": [
+                    16,
+                    16,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0lNCT",
+                  "name": "proj2Head",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PWHiM",
+                      "name": "proj2Name",
+                      "fill": "#FFFFFF",
+                      "content": "cli_toolkit",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bnu9c",
+                      "name": "proj2Dates",
+                      "fill": "#777777",
+                      "content": "2020 — 2021",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "EWLY7",
+                  "name": "proj2Tech",
+                  "fill": "#FF6B35",
+                  "content": "Rust · Python",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "9iQ6l",
+                  "name": "proj2Desc",
+                  "fill": "#777777",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Internal dev tools for local env setup and migrations. Used by 20+ engineers.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kRhi9",
+          "name": "projFooter",
+          "width": "fill_container",
+          "fill": "#212121",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000020",
+            "offset": {
+              "x": 0,
+              "y": -1
+            },
+            "blur": 8
+          },
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "iQNg8",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "gmXFo",
+              "name": "footerLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w0jtp",
+                  "name": "footerTwitter",
+                  "fill": "#777777",
+                  "content": "twitter",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FCP4l",
+                  "name": "footerLinkedIn",
+                  "fill": "#777777",
+                  "content": "linkedin",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "PKnFb",
+                  "name": "footerGitHub",
+                  "fill": "#777777",
+                  "content": "github",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "D9xjT",
+              "name": "footerCopy",
+              "fill": "#777777",
+              "content": "© 2025",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GXARd",
+      "x": 0,
+      "y": 1236,
+      "name": "Page: Home (Mobile)",
+      "clip": true,
+      "width": 390,
+      "fill": "#1A1A1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Jg4hk",
+          "name": "header",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000025",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 12
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "j5pYA",
+              "name": "logo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "N0HJy",
+              "name": "nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dsvR6",
+                  "name": "linkWork",
+                  "fill": "#FFFFFF",
+                  "content": "work",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ym28X",
+                  "name": "linkAbout",
+                  "fill": "#777777",
+                  "content": "about",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xenZP",
+                  "name": "linkContact",
+                  "fill": "#777777",
+                  "content": "contact",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Y3Pki",
+              "name": "cta",
+              "height": 36,
+              "fill": "#FF6B35",
+              "cornerRadius": 12,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#FF6B3550",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 20
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AzDln",
+                  "name": "ctaLabel",
+                  "fill": "#0D0D0D",
+                  "content": "resume.pdf",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tBN7E",
+          "name": "hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1A1A1A",
+                "position": 0
+              },
+              {
+                "color": "#251A14",
+                "position": 0.4
+              },
+              {
+                "color": "#1A1A1A",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            48,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "mfCRu",
+              "name": "heroName",
+              "fill": "#FFFFFF",
+              "content": "your_name",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 24,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "EoiGd",
+              "name": "heroTagline",
+              "fill": "#777777",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "> software_engineer · building systems that scale",
+              "lineHeight": 1.4,
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "30TDk",
+              "name": "heroImage",
+              "width": "fill_container",
+              "height": 160,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771856397395.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 12,
+              "layout": "vertical"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xKSdR",
+          "name": "pagesSection",
+          "width": "fill_container",
+          "fill": "#212121",
+          "cornerRadius": 12,
+          "stroke": {
+            "thickness": {
+              "left": 3
+            },
+            "fill": "#FF6B35"
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            20,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "0Mulz",
+              "name": "pagesTitle",
+              "fill": "#777777",
+              "content": "// pages",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "TC7Lb",
+              "name": "linkWork",
+              "fill": "#FF6B35",
+              "content": "> work_experience",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "4UJCc",
+              "name": "linkEdu",
+              "fill": "#FF6B35",
+              "content": "> education",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "n5hUw",
+              "name": "linkProj",
+              "fill": "#FF6B35",
+              "content": "> projects",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JD7EU",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "#212121",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#2D2D2D"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000020",
+            "offset": {
+              "x": 0,
+              "y": -1
+            },
+            "blur": 8
+          },
+          "padding": [
+            20,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hHCw2",
+              "name": "footerLogo",
+              "fill": "#FFFFFF",
+              "content": "~/portfolio",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "k7W0r",
+              "name": "footerLinks",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "00kLY",
+                  "name": "footerTwitter",
+                  "fill": "#777777",
+                  "content": "twitter",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cfPa6",
+                  "name": "footerLinkedIn",
+                  "fill": "#777777",
+                  "content": "linkedin",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "CCOJ3",
+                  "name": "footerGitHub",
+                  "fill": "#777777",
+                  "content": "github",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "mfCku",
+              "name": "footerCopy",
+              "fill": "#777777",
+              "content": "© 2025",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

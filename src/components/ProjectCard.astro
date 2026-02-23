@@ -1,0 +1,31 @@
+---
+import type { Project } from '../data/projects';
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+<div
+  class="min-w-0 overflow-hidden rounded-2xl border border-elevated bg-surface shadow-card transition-shadow duration-300 hover:shadow-xl sm:p-0"
+>
+  {project.image && (
+    <div class="h-[100px] w-full overflow-hidden rounded-t-2xl">
+      <img
+        src={project.image}
+        alt=""
+        class="h-full w-full object-cover"
+        width="800"
+        height="100"
+        loading="lazy"
+      />
+    </div>
+  )}
+  <div class="p-4 sm:p-5">
+    <div class="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-x-2 gap-y-1">
+      <span class="text-xs text-white sm:text-sm">{project.name}</span>
+      <span class="text-[11px] text-[#777] sm:text-xs">{project.dates}</span>
+    </div>
+    <p class="mb-2 text-xs text-accent sm:text-[13px]">{project.tech}</p>
+    <p class="text-xs leading-relaxed text-[#777] sm:text-[13px]">{project.description}</p>
+  </div>
+</div>

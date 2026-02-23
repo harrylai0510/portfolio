@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+<Layout title="projects — ~/portfolio" description="Projects">
+  <div class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
+      <p class="mb-4 text-xs text-[#777] sm:mb-6">// projects</p>
+      <div class="flex flex-col gap-4 sm:gap-6">
+        {projects.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>

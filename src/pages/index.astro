@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="portfolio" description="Portfolio">
+  <div class="flex min-h-screen flex-col">
+    <Header />
+    <main class="flex flex-1 flex-col min-w-0">
+      <section
+        class="flex w-full flex-col gap-3 px-4 py-12 sm:gap-4 sm:px-6 sm:py-16 md:px-8 md:py-20"
+        style="background: linear-gradient(180deg, #1A1A1A 0%, #251A14 40%, #1A1A1A 100%);"
+      >
+        <h1 class="text-2xl font-semibold text-white sm:text-[28px] md:text-[32px]">Harry Lai</h1>
+        <p class="max-w-full text-xs leading-snug text-[#777] sm:text-sm">
+          &gt; software_engineer · building systems that scale
+        </p>
+        <div class="w-full overflow-hidden rounded-2xl sm:rounded-2xl md:h-[220px] h-[160px] sm:h-[200px]">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80"
+            alt="Professional developer at desk"
+            class="h-full w-full object-cover"
+            width="1200"
+            height="220"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+      <section
+        class="mx-4 mb-6 flex flex-col gap-4 rounded-xl border-l-4 border-accent bg-surface px-4 py-5 sm:mx-6 sm:mb-8 sm:px-6 sm:py-6 md:mx-8 md:px-8"
+      >
+        <p class="text-xs text-[#777]">// pages</p>
+        <a href="/work" class="text-sm text-accent transition-opacity hover:opacity-80 active:opacity-70 touch-manipulation py-1">
+          &gt; work_experience
+        </a>
+        <a href="/education" class="text-sm text-accent transition-opacity hover:opacity-80 active:opacity-70 touch-manipulation py-1">
+          &gt; education
+        </a>
+        <a href="/projects" class="text-sm text-accent transition-opacity hover:opacity-80 active:opacity-70 touch-manipulation py-1">
+          &gt; projects
+        </a>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</Layout>
