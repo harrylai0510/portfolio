@@ -3,9 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import EducationCard from '../components/EducationCard.astro';
-import { education } from '../data/education';
+import { fetchEducationFromStrapi } from '../lib/strapi';
+
+const education = await fetchEducationFromStrapi();
 ---
-<Layout title="education — ~/portfolio" description="Education">
+<Layout title="Education - Harry Lai - Portfolio" description="Education">
   <div class="flex min-h-screen flex-col">
     <Header />
     <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
