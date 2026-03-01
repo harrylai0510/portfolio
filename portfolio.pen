@@ -46,7 +46,7 @@
               "id": "TfsIb",
               "name": "logo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 14,
               "fontWeight": "600"
@@ -73,7 +73,7 @@
                   "id": "dcAW4",
                   "name": "linkAbout",
                   "fill": "#777777",
-                  "content": "about",
+                  "content": "education",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -83,7 +83,7 @@
                   "id": "gT5AT",
                   "name": "linkContact",
                   "fill": "#777777",
-                  "content": "contact",
+                  "content": "projects",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -119,7 +119,7 @@
                   "id": "8lxsr",
                   "name": "ctaLabel",
                   "fill": "#0D0D0D",
-                  "content": "resume.pdf",
+                  "content": "Download resume",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "600"
@@ -168,7 +168,7 @@
               "id": "0hKpX",
               "name": "heroName",
               "fill": "#FFFFFF",
-              "content": "your_name",
+              "content": "Harry Lai",
               "fontFamily": "JetBrains Mono",
               "fontSize": 32,
               "fontWeight": "600"
@@ -299,7 +299,7 @@
               "id": "BxWk8",
               "name": "footerLogo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Harry Lai - Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 12,
               "fontWeight": "600"
@@ -316,7 +316,7 @@
                   "id": "MVYEV",
                   "name": "footerTwitter",
                   "fill": "#777777",
-                  "content": "twitter",
+                  "content": "github",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -335,6 +335,7 @@
                   "type": "text",
                   "id": "G2dp1",
                   "name": "footerGitHub",
+                  "enabled": false,
                   "fill": "#777777",
                   "content": "github",
                   "fontFamily": "JetBrains Mono",
@@ -401,7 +402,7 @@
               "id": "nTLTh",
               "name": "logo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 14,
               "fontWeight": "600"
@@ -428,7 +429,7 @@
                   "id": "6aaX3",
                   "name": "linkAbout",
                   "fill": "#777777",
-                  "content": "about",
+                  "content": "education",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -438,7 +439,7 @@
                   "id": "r6Cfu",
                   "name": "linkContact",
                   "fill": "#777777",
-                  "content": "contact",
+                  "content": "projects",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -474,7 +475,7 @@
                   "id": "Rfcmt",
                   "name": "ctaLabel",
                   "fill": "#0D0D0D",
-                  "content": "resume.pdf",
+                  "content": "Download resume",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "600"
@@ -1057,7 +1058,7 @@
               "id": "vJKgb",
               "name": "footerLogo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Harry Lai - Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 12,
               "fontWeight": "600"
@@ -1074,7 +1075,7 @@
                   "id": "cmGhR",
                   "name": "footerTwitter",
                   "fill": "#777777",
-                  "content": "twitter",
+                  "content": "github",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1093,6 +1094,7 @@
                   "type": "text",
                   "id": "vqNNc",
                   "name": "footerGitHub",
+                  "enabled": false,
                   "fill": "#777777",
                   "content": "github",
                   "fontFamily": "JetBrains Mono",
@@ -1159,7 +1161,7 @@
               "id": "z6Xps",
               "name": "logo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 14,
               "fontWeight": "600"
@@ -1186,7 +1188,7 @@
                   "id": "6DqO7",
                   "name": "linkAbout",
                   "fill": "#777777",
-                  "content": "about",
+                  "content": "education",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -1196,7 +1198,7 @@
                   "id": "xXGap",
                   "name": "linkContact",
                   "fill": "#777777",
-                  "content": "contact",
+                  "content": "projects",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -1232,7 +1234,7 @@
                   "id": "4TKxe",
                   "name": "ctaLabel",
                   "fill": "#0D0D0D",
-                  "content": "resume.pdf",
+                  "content": "Download resume",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "600"
@@ -1459,7 +1461,7 @@
               "id": "DGiVM",
               "name": "footerLogo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Harry Lai - Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 12,
               "fontWeight": "600"
@@ -1476,7 +1478,7 @@
                   "id": "ej0Bu",
                   "name": "footerTwitter",
                   "fill": "#777777",
-                  "content": "twitter",
+                  "content": "github",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1495,6 +1497,7 @@
                   "type": "text",
                   "id": "gTxIK",
                   "name": "footerGitHub",
+                  "enabled": false,
                   "fill": "#777777",
                   "content": "github",
                   "fontFamily": "JetBrains Mono",
@@ -1571,7 +1574,7 @@
               "id": "x9vCV",
               "name": "logo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 14,
               "fontWeight": "600"
@@ -1598,7 +1601,7 @@
                   "id": "K0p9N",
                   "name": "linkAbout",
                   "fill": "#777777",
-                  "content": "about",
+                  "content": "education",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -1608,7 +1611,7 @@
                   "id": "Oh7LO",
                   "name": "linkContact",
                   "fill": "#777777",
-                  "content": "contact",
+                  "content": "projects",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -1644,7 +1647,7 @@
                   "id": "1EYHX",
                   "name": "ctaLabel",
                   "fill": "#0D0D0D",
-                  "content": "resume.pdf",
+                  "content": "Download resume",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "600"
@@ -1669,6 +1672,7 @@
               "type": "text",
               "id": "jBUJJ",
               "name": "projTitle",
+              "enabled": false,
               "fill": "#777777",
               "content": "// projects",
               "fontFamily": "JetBrains Mono",
@@ -1874,6 +1878,60 @@
                   "fontWeight": "normal"
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "pPRS9",
+              "name": "projHeaderRow",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c9bTV",
+                  "name": "viewToggle",
+                  "height": 40,
+                  "fill": "#212121",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#2D2D2D"
+                  },
+                  "gap": 4,
+                  "padding": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YcybL",
+                      "name": "cardViewBtn",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#FF6B35",
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V38yJ",
+                      "name": "listViewBtn",
+                      "width": 36,
+                      "height": 36,
+                      "cornerRadius": 8
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "AssUt",
+                  "name": "projTitleCopy",
+                  "fill": "#777777",
+                  "content": "// projects",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -1911,7 +1969,7 @@
               "id": "iQNg8",
               "name": "footerLogo",
               "fill": "#FFFFFF",
-              "content": "~/portfolio",
+              "content": "Harry Lai - Portfolio",
               "fontFamily": "JetBrains Mono",
               "fontSize": 12,
               "fontWeight": "600"
@@ -1928,7 +1986,7 @@
                   "id": "w0jtp",
                   "name": "footerTwitter",
                   "fill": "#777777",
-                  "content": "twitter",
+                  "content": "github",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "normal"
@@ -1947,6 +2005,7 @@
                   "type": "text",
                   "id": "PKnFb",
                   "name": "footerGitHub",
+                  "enabled": false,
                   "fill": "#777777",
                   "content": "github",
                   "fontFamily": "JetBrains Mono",
