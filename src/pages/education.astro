@@ -2,74 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import EducationCard from '../components/EducationCard.astro';
+import { fetchEducationFromStrapi } from '../lib/strapi';
 
-const strapiUrl = import.meta.env.PUBLIC_STRAPI_URL ?? '';
-const strapiKey = import.meta.env.PUBLIC_STRAPI_API_KEY ?? '';
+const education = await fetchEducationFromStrapi();
 ---
 <Layout title="Education - Harry Lai - Portfolio" description="Education">
   <div class="flex min-h-screen flex-col">
     <Header />
     <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
       <p class="mb-4 text-xs text-[#777] sm:mb-6">// education</p>
-      <div id="education-list" class="flex flex-col gap-4 sm:gap-6">
-        <p class="text-xs text-[#777]">Loading…</p>
+      <div class="flex flex-col gap-4 sm:gap-6">
+        {education.map((entry) => (
+          <EducationCard entry={entry} />
+        ))}
       </div>
     </main>
     <Footer />
   </div>
 </Layout>
-<script define:vars={{ strapiUrl, strapiKey }}>
-  const listEl = document.getElementById('education-list');
-  if (!strapiUrl) {
-    listEl.innerHTML = '<p class="text-xs text-[#777]">Configure PUBLIC_STRAPI_URL.</p>';
-  } else {
-    const url = `${strapiUrl.replace(/\/$/, '')}/api/educations`;
-    const headers = { 'Content-Type': 'application/json' };
-    if (strapiKey) headers['Authorization'] = `Bearer ${strapiKey}`;
-    fetch(url, { headers })
-      .then((res) => {
-        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
-        return res.json();
-      })
-      .then((json) => {
-        const data = Array.isArray(json?.data) ? json.data : [];
-        const entries = data.map((d) => {
-          const start = d.start_date ?? '';
-          const end = d.end_date ?? '';
-          const dates = start && end ? `${start} — ${end}` : start || end;
-          return {
-            degree: d.program_name ?? '',
-            school: d.school_name ?? '',
-            dates,
-            description: d.description ?? '',
-          };
-        });
-        if (entries.length === 0) {
-          listEl.innerHTML = '<p class="text-xs text-[#777]">No education entries.</p>';
-          return;
-        }
-        listEl.innerHTML = entries
-          .map(
-            (e) =>
-              `<div class="min-w-0 rounded-2xl border border-elevated bg-surface p-4 shadow-card transition-shadow duration-300 hover:shadow-xl sm:p-5">
-                <div class="mb-2 flex min-w-0 flex-wrap items-center justify-between gap-x-2 gap-y-1">
-                  <span class="text-xs text-white sm:text-sm">${escapeHtml(e.degree)}</span>
-                  <span class="text-[11px] text-[#777] sm:text-xs">${escapeHtml(e.dates)}</span>
-                </div>
-                <p class="mb-2 text-xs text-accent sm:text-[13px]">${escapeHtml(e.school)}</p>
-                <p class="text-xs leading-relaxed text-[#777] sm:text-[13px]">${escapeHtml(e.description)}</p>
-              </div>`
-          )
-          .join('');
-      })
-      .catch((err) => {
-        console.error('[Strapi] education fetch error:', err);
-        listEl.innerHTML = '<p class="text-xs text-red-500">Failed to load education. Check console.</p>';
-      });
-  }
-  function escapeHtml(s) {
-    const div = document.createElement('div');
-    div.textContent = s;
-    return div.innerHTML;
-  }
-</script>
