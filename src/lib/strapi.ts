@@ -66,16 +66,24 @@ function mapStrapiToEntry(doc: StrapiEducationDoc): EducationEntry {
  * Collection name is assumed to be "education" → endpoint /api/educations (Strapi pluralizes).
  */
 export async function fetchEducationFromStrapi(): Promise<EducationEntry[]> {
-  if (!STRAPI_URL || !STRAPI_API_KEY) return [];
+  if (!STRAPI_URL || !STRAPI_API_KEY) {
+    console.error('[Strapi] fetchEducationFromStrapi: STRAPI_URL or STRAPI_API_KEY not set');
+    return [];
+  }
 
   const url = `${STRAPI_URL.replace(/\/$/, '')}/api/educations`;
   try {
     const res = await fetch(url, { headers: strapiHeaders() });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      const body = await res.text();
+      console.error(`[Strapi] fetchEducationFromStrapi failed: ${res.status} ${res.statusText}`, body.slice(0, 500));
+      return [];
+    }
     const json = (await res.json()) as { data?: StrapiEducationDoc[] };
     const list = Array.isArray(json.data) ? json.data : [];
     return list.map(mapStrapiToEntry);
-  } catch {
+  } catch (err) {
+    console.error('[Strapi] fetchEducationFromStrapi error:', err);
     return [];
   }
 }
@@ -123,16 +131,24 @@ function mapStrapiToJob(doc: StrapiWorkDoc): Job {
 }
 
 export async function fetchWorkFromStrapi(): Promise<Job[]> {
-  if (!STRAPI_URL || !STRAPI_API_KEY) return [];
+  if (!STRAPI_URL || !STRAPI_API_KEY) {
+    console.error('[Strapi] fetchWorkFromStrapi: STRAPI_URL or STRAPI_API_KEY not set');
+    return [];
+  }
 
   const url = `${STRAPI_URL.replace(/\/$/, '')}/api/works?sort=start_date:desc`;
   try {
     const res = await fetch(url, { headers: strapiHeaders() });
-    if (!res.ok) return [];
+    if (!res.ok) {
+      const body = await res.text();
+      console.error(`[Strapi] fetchWorkFromStrapi failed: ${res.status} ${res.statusText}`, body.slice(0, 500));
+      return [];
+    }
     const json = (await res.json()) as { data?: StrapiWorkDoc[] };
     const list = Array.isArray(json.data) ? json.data : [];
     return list.map(mapStrapiToJob);
-  } catch {
+  } catch (err) {
+    console.error('[Strapi] fetchWorkFromStrapi error:', err);
     return [];
   }
 }
