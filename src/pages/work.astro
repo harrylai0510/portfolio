@@ -3,9 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JobCard from '../components/JobCard.astro';
-import { jobs } from '../data/work';
+import { fetchWorkFromStrapi } from '../lib/strapi';
+
+const jobs = await fetchWorkFromStrapi();
 ---
-<Layout title="work_experience — ~/portfolio" description="Work experience">
+<Layout title="Work - Harry Lai - Portfolio" description="Work experience">
   <div class="flex min-h-screen flex-col">
     <Header />
     <main class="flex min-w-0 flex-1 flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12">
@@ -26,9 +28,11 @@ import { jobs } from '../data/work';
               <p class="font-mono text-sm text-white">
                 {job.role} · {job.company}
               </p>
-              <p class="mt-1.5 font-mono text-[13px] leading-snug text-[#777]">
-                {job.description}
-              </p>
+              <ul class="mt-1.5 list-disc space-y-1 pl-4 font-mono text-[13px] leading-snug text-[#777]">
+                {job.description.split('\n').filter(Boolean).map((line) => (
+                  <li>{line}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
