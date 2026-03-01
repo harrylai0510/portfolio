@@ -26,9 +26,24 @@ const navItems = [
     ))}
   </nav>
   <a
-    href="/resume.pdf"
+    href="https://strapi.harrylai.com/uploads/Lai_Hon_Chung_Resume_d3bc843d5c.pdf"
+    download="Lai_Hon_Chung_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="flex h-9 shrink-0 items-center justify-center rounded-xl bg-accent px-4 text-xs font-semibold text-[#0D0D0D] shadow-cta-glow transition-transform active:scale-100 hover:scale-105 touch-manipulation md:h-10 md:rounded-2xl md:px-5"
+    data-analytics-event="download_resume"
+    data-analytics-filename="Lai_Hon_Chung_Resume.pdf"
   >
-    Download resume.pdf
+    Download resume
   </a>
+  <script is:inline>
+    document.querySelector('[data-analytics-event="download_resume"]')?.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'file_download', {
+          file_name: this.getAttribute('data-analytics-filename') || 'resume.pdf',
+          link_url: this.getAttribute('href') || '',
+        });
+      }
+    });
+  </script>
 </header>
